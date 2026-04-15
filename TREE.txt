@@ -1,0 +1,167 @@
+sensor_damage_detection_repo/
+├─ gpr
+│  └─ general
+│     ├─ corrosion_rebar_exposure
+│     │  ├─ config.yaml
+│     │  ├─ infer.py
+│     │  ├─ model.py
+│     │  ├─ README.md
+│     │  └─ train.py
+│     ├─ crack
+│     │  ├─ config.yaml
+│     │  ├─ infer.py
+│     │  ├─ model.py
+│     │  ├─ README.md
+│     │  └─ train.py
+│     ├─ delamination
+│     │  ├─ config.yaml
+│     │  ├─ infer.py
+│     │  ├─ model.py
+│     │  ├─ README.md
+│     │  └─ train.py
+│     ├─ leakage_efflorescence
+│     │  ├─ config.yaml
+│     │  ├─ infer.py
+│     │  ├─ model.py
+│     │  ├─ README.md
+│     │  └─ train.py
+│     └─ spalling
+│        ├─ config.yaml
+│        ├─ infer.py
+│        ├─ model.py
+│        ├─ README.md
+│        └─ train.py
+├─ lidar
+│  ├─ ground_lidar
+│  │  ├─ crack
+│  │  │  ├─ config.yaml
+│  │  │  ├─ infer.py
+│  │  │  ├─ model.py
+│  │  │  ├─ README.md
+│  │  │  └─ train.py
+│  │  ├─ deformation_displacement
+│  │  │  ├─ config.yaml
+│  │  │  ├─ infer.py
+│  │  │  ├─ model.py
+│  │  │  ├─ README.md
+│  │  │  └─ train.py
+│  │  ├─ delamination
+│  │  │  ├─ config.yaml
+│  │  │  ├─ infer.py
+│  │  │  ├─ model.py
+│  │  │  ├─ README.md
+│  │  │  └─ train.py
+│  │  └─ spalling
+│  │     ├─ config.yaml
+│  │     ├─ infer.py
+│  │     ├─ model.py
+│  │     ├─ README.md
+│  │     └─ train.py
+│  └─ underwater_lidar
+│     └─ scour_and_erosion
+│        ├─ config.yaml
+│        ├─ infer.py
+│        ├─ model.py
+│        ├─ README.md
+│        └─ train.py
+├─ mbes
+│  └─ general
+│     └─ scour_and_erosion
+│        ├─ config.yaml
+│        ├─ infer.py
+│        ├─ model.py
+│        ├─ README.md
+│        └─ train.py
+├─ rgb
+│  ├─ ground_rgb
+│  │  ├─ corrosion_rebar_exposure
+│  │  │  ├─ config.yaml
+│  │  │  ├─ infer.py
+│  │  │  ├─ model.py
+│  │  │  ├─ README.md
+│  │  │  └─ train.py
+│  │  ├─ crack
+│  │  │  ├─ config.yaml
+│  │  │  ├─ infer.py
+│  │  │  ├─ model.py
+│  │  │  ├─ README.md
+│  │  │  └─ train.py
+│  │  ├─ delamination
+│  │  │  ├─ config.yaml
+│  │  │  ├─ infer.py
+│  │  │  ├─ model.py
+│  │  │  ├─ README.md
+│  │  │  └─ train.py
+│  │  └─ spalling
+│  │     ├─ config.yaml
+│  │     ├─ infer.py
+│  │     ├─ model.py
+│  │     ├─ README.md
+│  │     └─ train.py
+│  └─ underwater_rgb
+│     ├─ corrosion_rebar_exposure
+│     │  ├─ config.yaml
+│     │  ├─ infer.py
+│     │  ├─ model.py
+│     │  ├─ README.md
+│     │  └─ train.py
+│     ├─ crack
+│     │  ├─ config.yaml
+│     │  ├─ infer.py
+│     │  ├─ model.py
+│     │  ├─ README.md
+│     │  └─ train.py
+│     ├─ delamination
+│     │  ├─ config.yaml
+│     │  ├─ infer.py
+│     │  ├─ model.py
+│     │  ├─ README.md
+│     │  └─ train.py
+│     └─ spalling
+│        ├─ config.yaml
+│        ├─ infer.py
+│        ├─ model.py
+│        ├─ README.md
+│        └─ train.py
+├─ stiv
+│  └─ general
+│     └─ flow_velocity_and_discharge
+│        ├─ config.yaml
+│        ├─ infer.py
+│        ├─ model.py
+│        ├─ README.md
+│        └─ train.py
+├─ tir
+│  └─ general
+│     ├─ corrosion_rebar_exposure
+│     │  ├─ config.yaml
+│     │  ├─ infer.py
+│     │  ├─ model.py
+│     │  ├─ README.md
+│     │  └─ train.py
+│     ├─ crack
+│     │  ├─ config.yaml
+│     │  ├─ infer.py
+│     │  ├─ model.py
+│     │  ├─ README.md
+│     │  └─ train.py
+│     ├─ delamination
+│     │  ├─ config.yaml
+│     │  ├─ infer.py
+│     │  ├─ model.py
+│     │  ├─ README.md
+│     │  └─ train.py
+│     ├─ leakage_efflorescence
+│     │  ├─ config.yaml
+│     │  ├─ infer.py
+│     │  ├─ model.py
+│     │  ├─ README.md
+│     │  └─ train.py
+│     └─ spalling
+│        ├─ config.yaml
+│        ├─ infer.py
+│        ├─ model.py
+│        ├─ README.md
+│        └─ train.py
+├─ .gitignore
+└─ README.md
