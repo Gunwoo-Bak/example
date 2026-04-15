@@ -1,0 +1,7 @@
+sensor_family: stiv
+sub_sensor: general
+target_type: flow_velocity_and_discharge
+target_type_kr: "유속 및 유량"
+dataset_path: ./data
+checkpoint_path: ./checkpoints
+notes: replace this template with real experiment settings

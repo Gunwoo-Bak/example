@@ -1,0 +1,7 @@
+sensor_family: lidar
+sub_sensor: ground_lidar
+target_type: delamination
+target_type_kr: "박리"
+dataset_path: ./data
+checkpoint_path: ./checkpoints
+notes: replace this template with real experiment settings

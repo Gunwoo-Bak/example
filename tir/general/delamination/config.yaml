@@ -1,0 +1,7 @@
+sensor_family: tir
+sub_sensor: general
+target_type: delamination
+target_type_kr: "박리"
+dataset_path: ./data
+checkpoint_path: ./checkpoints
+notes: replace this template with real experiment settings

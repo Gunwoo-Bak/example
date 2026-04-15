@@ -1,0 +1,7 @@
+sensor_family: lidar
+sub_sensor: ground_lidar
+target_type: deformation_displacement
+target_type_kr: "변형(변위)"
+dataset_path: ./data
+checkpoint_path: ./checkpoints
+notes: replace this template with real experiment settings

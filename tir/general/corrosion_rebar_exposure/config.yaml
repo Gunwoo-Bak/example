@@ -1,0 +1,7 @@
+sensor_family: tir
+sub_sensor: general
+target_type: corrosion_rebar_exposure
+target_type_kr: "부식(철근 노출)"
+dataset_path: ./data
+checkpoint_path: ./checkpoints
+notes: replace this template with real experiment settings

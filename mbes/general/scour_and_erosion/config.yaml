@@ -1,0 +1,7 @@
+sensor_family: mbes
+sub_sensor: general
+target_type: scour_and_erosion
+target_type_kr: "세굴 및 침식"
+dataset_path: ./data
+checkpoint_path: ./checkpoints
+notes: replace this template with real experiment settings

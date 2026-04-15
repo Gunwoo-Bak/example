@@ -1,0 +1,7 @@
+sensor_family: lidar
+sub_sensor: ground_lidar
+target_type: spalling
+target_type_kr: "박락(층분리, 파손)"
+dataset_path: ./data
+checkpoint_path: ./checkpoints
+notes: replace this template with real experiment settings
