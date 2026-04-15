@@ -1,0 +1,7 @@
+sensor_family: gpr
+sub_sensor: general
+target_type: crack
+target_type_kr: "균열"
+dataset_path: ./data
+checkpoint_path: ./checkpoints
+notes: replace this template with real experiment settings
