@@ -1,0 +1,21 @@
+{
+  "image_height": 1024,
+  "image_width": 1024,
+  "classes": {
+    "0": "BG",
+    "1": "CRC",
+    "2": "DLM",
+    "3": "SPL"
+  },
+  "geotiff": {
+    "pixel_size_x": 0.00204,
+    "pixel_size_y": 0.00204,
+    "pixel_area": 4.161600000000001e-06,
+    "tiepoint_col": 0.0,
+    "tiepoint_row": 0.0,
+    "tiepoint_x": 22.97856,
+    "tiepoint_y": 20.540840000000003,
+    "crs_text": "Arbitrary (m)|"
+  },
+  "note": "No ground-truth mask was provided. Pixel and instance summaries are computed from model predictions only."
+}
