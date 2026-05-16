@@ -18,7 +18,6 @@ The repository is inference-focused. It does not include training data, GT masks
 - Full prediction outputs: mask, overlay, confidence map, pixel summary, instance summary.
 - Damage-type outputs separated into `CRC`, `DLM`, and `SPL` folders.
 - GeoTIFF scale/tiepoint support for local meter coordinates and `m2` area summaries.
-- Prediction-based quantification only. Accuracy, IoU, F1, precision, and recall require GT masks.
 
 ## Repository Layout
 
