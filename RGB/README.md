@@ -10,6 +10,7 @@ Semantic segmentation inference for concrete surface damage images. The model pr
 | 3 | SPL | spalling / 박락 | orange |
 
 The repository is inference-focused. It does not include training data, GT masks, model weights, or generated outputs.
+Download the model checkpoint separately from the repository release assets before running inference.
 
 ## Features
 
@@ -18,6 +19,7 @@ The repository is inference-focused. It does not include training data, GT masks
 - Full prediction outputs: mask, overlay, confidence map, pixel summary, instance summary.
 - Damage-type outputs separated into `CRC`, `DLM`, and `SPL` folders.
 - GeoTIFF scale/tiepoint support for local meter coordinates and `m2` area summaries.
+- Prediction-based quantification only. Accuracy, IoU, F1, precision, and recall require GT masks.
 
 ## Repository Layout
 
@@ -42,6 +44,7 @@ crackseg-repository/
     test_metrics.py
   weights/
     README.md
+    best.pt       # downloaded separately from GitHub Releases
 ```
 
 Ignored local folders:
@@ -72,7 +75,37 @@ python -c "import torch; print(torch.__version__); print(torch.cuda.is_available
 
 ## Model Weights
 
-Put checkpoints under `weights/`, or pass an absolute checkpoint path.
+Model checkpoints are intentionally excluded from Git because they are large. Download `best.pt` from the repository's GitHub Release assets and place it under `weights/`.
+
+Expected local layout:
+
+```text
+crackseg-repository/
+  weights/
+    best.pt
+```
+
+If the Release page provides a direct download URL, you can run:
+
+```bash
+cd /home/gunwoo/CrackSegmentation/crackseg-repository
+mkdir -p weights
+wget -O weights/best.pt "https://github.com/Gunwoo-Bak/example/releases/download/v1.0.0/best.pt"
+```
+
+Alternatively, download `best.pt` manually from:
+
+```text
+https://github.com/<OWNER>/<REPOSITORY>/releases
+```
+
+and move it to:
+
+```text
+weights/best.pt
+```
+
+You can also pass an absolute checkpoint path with `--checkpoint`.
 
 Known local checkpoint:
 
@@ -80,7 +113,11 @@ Known local checkpoint:
 /home/gunwoo/CrackSegmentation/outputs/dachung_finetune/best.pt
 ```
 
-Weights are intentionally excluded from Git because they are large.
+For maintainers creating a release, attach this file as the binary asset:
+
+```text
+/home/gunwoo/CrackSegmentation/outputs/dachung_finetune/best.pt
+```
 
 ## Single Image Inference
 
@@ -90,7 +127,7 @@ conda activate crackseg
 
 python scripts/predict.py \
   --image data/daechung_298.tif \
-  --checkpoint /home/gunwoo/CrackSegmentation/outputs/dachung_finetune/best.pt \
+  --checkpoint weights/best.pt \
   --device cuda \
   --output-dir outputs/daechung_298_test
 ```
@@ -103,7 +140,7 @@ conda activate crackseg
 
 python scripts/batch_predict.py \
   --input-dir data \
-  --checkpoint /home/gunwoo/CrackSegmentation/outputs/dachung_finetune/best.pt \
+  --checkpoint weights/best.pt \
   --device cuda \
   --output-dir outputs/predictions
 ```
@@ -218,7 +255,7 @@ Override at runtime:
 ```bash
 python scripts/predict.py \
   --image data/daechung_298.tif \
-  --checkpoint /home/gunwoo/CrackSegmentation/outputs/dachung_finetune/best.pt \
+  --checkpoint weights/best.pt \
   --tile-size 512 \
   --stride 256
 ```
