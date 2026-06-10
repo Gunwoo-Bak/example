@@ -1,2 +1,0 @@
-instance_id,instance_local_id,class_id,class_name,centroid_x_px,centroid_y_px,bbox_xmin_px,bbox_ymin_px,bbox_xmax_px,bbox_ymax_px,bbox_w_px,bbox_h_px,area_px,centroid_x_m,centroid_y_m,bbox_xmin_m,bbox_ymin_m,bbox_xmax_m,bbox_ymax_m,area_m2
-1,1,1,CRC,53.0,46.0,53,46,54,47,1,1,1,23.0877,20.44598,23.08668,20.44496,23.08872,20.447,4.1616e-06
