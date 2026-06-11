@@ -1,0 +1,100 @@
+{
+  "image_height": 3956,
+  "image_width": 5280,
+  "classes": {
+    "0": "BG",
+    "1": "CRC",
+    "2": "DLM",
+    "3": "SPL"
+  },
+  "geotiff": null,
+  "geo3d": {
+    "method": "dji_pose_mesh_ray",
+    "intrinsics": {
+      "width": 5280,
+      "height": 3956,
+      "focal_length_px": 3725.151611,
+      "cx": 2640.0,
+      "cy": 1978.0,
+      "dewarp_data": "2022-06-08;3713.290000000000,3713.290000000000,7.020000000000,-8.720000000000,-0.112575240000,0.014874430000,-0.000085720000,0.000000100000,-0.027064110000",
+      "distortion_note": "DewarpData is preserved in metadata; ray projection currently uses calibrated pinhole intrinsics."
+    },
+    "pose": {
+      "source_path": "data/DJI_20250702162025_0007_V.JPG",
+      "center_x_m": 243040.20415268186,
+      "center_y_m": 431260.15242600936,
+      "center_z_m": 84.76,
+      "yaw_deg": 70.5,
+      "pitch_deg": 0.0,
+      "roll_deg": 0.0,
+      "position_source": "timestamp_mrk",
+      "orientation_source": "jpg_xmp_gimbal",
+      "rtk_std_lon_m": 0.01547,
+      "rtk_std_lat_m": 0.01444,
+      "rtk_std_hgt_m": 0.04479,
+      "orientation_note": "DJI gimbal yaw/pitch/roll are interpreted as camera optical-axis orientation in an ENU world frame."
+    },
+    "mesh": {
+      "path": "/home/gunwoo/RGB_v2/dam - Cloud.obj",
+      "vertex_count": 1006692,
+      "face_count": 2012989,
+      "bounds_min": [
+        242986.140625,
+        431066.09375,
+        32.6238327
+      ],
+      "bounds_max": [
+        243138.875,
+        431283.3125,
+        122.66383362
+      ],
+      "ray_backend_requested": "warp",
+      "ray_backend": "warp",
+      "warp_device": "cuda:0",
+      "ray_backend_error": null,
+      "warp": {
+        "backend": "warp",
+        "device": "cuda:0",
+        "origin_offset": [
+          243062.5078125,
+          431174.703125,
+          77.64383316
+        ]
+      }
+    },
+    "instance_sample_count": 128,
+    "node_sample_count": 256,
+    "ray_batch_size": 128,
+    "representative_mode": "centroid",
+    "profile_timings_sec": {
+      "mesh_prepare_regions_sec": 0.01623796101193875,
+      "mesh_instance_ray_count": 113.0,
+      "mesh_node_ray_count": 4524.0,
+      "mesh_total_ray_count": 4637.0,
+      "mesh_ray_direction_sec": 0.00027982890605926514,
+      "mesh_instance_intersection_sec": 0.0012565440265461802,
+      "mesh_node_intersection_sec": 0.014428669004701078,
+      "mesh_assemble_results_sec": 0.010435509961098433,
+      "mesh_total_sec": 0.042399873957037926
+    },
+    "accuracy_note": "Damage instance coordinates are estimated by intersecting DJI camera rays with a triangulated mesh. By default, the reported instance coordinate is the mesh hit at the 2D instance centroid. representative_mode=median uses the median of sampled mesh hits inside the damage mask. nodes_world_xyz_json stores sampled contour node coordinates as [[x,y,z], ...]."
+  },
+  "damage_pixels_3d": {
+    "enabled": false,
+    "stride": 1,
+    "row_count": 0,
+    "path": null
+  },
+  "note": "No ground-truth mask was provided. Pixel and instance summaries are computed from model predictions only.",
+  "profile_timings_sec": {
+    "export_geotiff_read_sec": 2.7e-05,
+    "export_instance_csv_write_sec": 0.003464,
+    "export_instances_2d_sec": 0.13654,
+    "export_instances_3d_sec": 0.042584,
+    "export_pixel_summary_sec": 0.022721,
+    "export_visual_outputs_sec": 6.211378,
+    "script_build_mesh_context_sec": 0.003895,
+    "script_inference_sec": 2.639282,
+    "script_read_image_sec": 0.090498
+  }
+}

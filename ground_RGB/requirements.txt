@@ -1,0 +1,14 @@
+torch>=2.0
+torchvision
+segmentation-models-pytorch
+opencv-python
+numpy
+PyYAML
+Pillow
+tqdm
+scikit-image
+scipy
+pyproj
+trimesh
+rtree
+warp-lang

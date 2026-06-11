@@ -1,0 +1,5 @@
+dam - Cloud.obj
+ground_RGB/weights/best.pt
+**/__pycache__/
+*.pyc
+.DS_Store
